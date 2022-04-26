@@ -83,3 +83,21 @@ body {
   background-color: var(--white);
   color: var(--black);
 }
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  height: 15vh;
+}
+.menu li:nth-child(2){
+  margin-left: auto;
+}
+/* Proyectos */
+.proyectos{
+  height: 85vh;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
