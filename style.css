@@ -1,9 +1,13 @@
 /* Imports - Tipografía */
-@import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
 
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 
 /* Reset */
@@ -62,7 +66,7 @@ picture {
   --black: #000000;
   --white: #ffffff;
   /* 2. Tipografía */
-  --font-sans: 'Inter var', sans-serif;
+  --font-sans: "Inter var", sans-serif;
   --font-size-1: 1rem;
   --font-size-2: 1.1rem;
   --font-size-3: 1.25rem;
@@ -91,13 +95,47 @@ body {
   padding: 20px;
   height: 15vh;
 }
-.menu li:nth-child(2){
+.menu li:nth-child(2) {
   margin-left: auto;
 }
 /* Proyectos */
-.proyectos{
+.proyectos {
   height: 85vh;
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Proyecto */
+.contenedor {
+  display: flex;
+  gap: 20px;
+  margin: 20px;
+}
+.contenedor > * {
+  flex: 1;
+}
+.contenedor .imagen img {
+  /* margin: auto; */
+}
+
+.contenedor .descripcion {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: aquamarine;
+}
+.contenedor .next {
+  margin-top: auto;
+  display: grid;
+  grid-auto-flow: column;
+}
+.contenedor .next svg {
+  width: 20px;
+}
+.contenedor .next svg:nth-child(2) {
+  place-self: end;
+}
+.contenedor .descripcion h2 {
+}
+.contenedor .descripcion p {
 }
