@@ -146,3 +146,19 @@ body {
 }
 .contenedor .descripcion p {
 }
+/* About */
+.about .contenedor {
+}
+.about .contenedor div:nth-child(1) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.about .contenedor div:nth-child(1) img {
+  grid-column: 2 /3;
+  grid-row: 1 /2;
+}
+.about .descripcion {
+  background: none;
+}
