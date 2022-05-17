@@ -95,7 +95,14 @@ body {
   padding: 20px;
   height: 15vh;
 }
-.menu li:nth-child(2) {
+.menu a {
+  text-decoration: none;
+  color: inherit;
+}
+.menu a:hover {
+  opacity: 0.5;
+}
+.menu a:nth-child(2) {
   margin-left: auto;
 }
 /* Proyectos */
